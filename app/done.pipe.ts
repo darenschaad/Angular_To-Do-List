@@ -18,6 +18,6 @@ export class DonePipe implements PipeTransform {
       });
     } else {
         return input;
-    }
+    } 
   }
 }
