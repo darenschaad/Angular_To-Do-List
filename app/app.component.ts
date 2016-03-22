@@ -2,14 +2,13 @@ import { Component, EventEmitter } from 'angular2/core';
 import { TaskListComponent } from './task-list.component';
 import { Task } from './task.model';
 
-
-
 @Component({
   selector: 'my-app',
   directives: [TaskListComponent],
   template: `
     <div class="container">
       <h1>To-Do List</h1>
+      <img src="resources/images/todo.jpeg">
       <task-list
         [taskList]="tasks"
         (onTaskSelect)="taskWasSelected($event)">

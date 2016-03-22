@@ -1,5 +1,15 @@
 h1 {
-  color: red;
+  color: #6d0808;
+}
+
+body {
+  background-color: #e5f4f8;
+  color: #3e4038;
+}
+
+img {
+  width: 210px;
+  length: auto;
 }
 
 .selected {
