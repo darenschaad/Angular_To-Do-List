@@ -5,16 +5,19 @@ import {Task} from './task.model';
   selector: 'new-task',
   outputs: ['onSubmitNewTask'],
   template: `
-  <div class="task-form">
-    <br>
-    <h3>Create Task:</h3>
-    <input placeholder="Description" class="col-sm-8 input-lg" #newDescription>
-    <select #newPriority>
-      <option value="low" selected="selected">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-    </select>
-    <button (click)="addTask(newDescription, newPriority)" class="btn-success btn-lg add-button">Add</button>
+  <div class="row">
+    <div class="task-form">
+      <br>
+      <h3>Create Task:</h3>
+
+      <input placeholder="Description" class="col-sm-8 input-lg" #newDescription>
+      <select #newPriority>
+        <option value="low" selected="selected">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button (click)="addTask(newDescription, newPriority)" class="btn-success btn-lg add-button">Add</button>
+    </div>
   </div>
   `
 })
